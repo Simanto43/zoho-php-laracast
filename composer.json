@@ -1,0 +1,11 @@
+{
+
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  },
+  "require": {
+    "zohocrm/php-sdk": "^2.0"
+  }
+}
