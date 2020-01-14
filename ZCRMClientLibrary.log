@@ -1,0 +1,8 @@
+2020-01-05 11:53:11 ERROR: zcrmsdk\crm\exception\ZCRMException Caused by:'current user should either be set in ZCRMRestClient or in configuration map' in C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\vendor\zohocrm\php-sdk\src\crm\utility\ZCRMConfigUtil.php(99)
+Trace::#0 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\vendor\zohocrm\php-sdk\src\crm\api\APIRequest.php(88): zcrmsdk\crm\utility\ZCRMConfigUtil::getAccessToken()
+#1 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\vendor\zohocrm\php-sdk\src\crm\api\APIRequest.php(138): zcrmsdk\crm\api\APIRequest->authenticateRequest()
+#2 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\vendor\zohocrm\php-sdk\src\crm\api\handler\ModuleAPIHandler.php(77): zcrmsdk\crm\api\APIRequest->getBulkAPIResponse()
+#3 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\vendor\zohocrm\php-sdk\src\crm\crud\ZCRMModule.php(954): zcrmsdk\crm\api\handler\ModuleAPIHandler->getAllFields()
+#4 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\core\bootstrap.php(14): zcrmsdk\crm\crud\ZCRMModule->getAllFields()
+#5 C:\Users\Mr Faisal\Desktop\Zoho-php-practisoner\index.php(5): require('C:\\Users\\Mr Fai...')
+#6 {main}

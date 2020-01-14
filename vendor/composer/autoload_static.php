@@ -22,6 +22,7 @@ class ComposerStaticInit77204a26215a26ca84e02dd21dae89f9
 
     public static $classMap = array (
         'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/controllers/PagesController.php',
+        'App\\Controllers\\UrlController' => __DIR__ . '/../..' . '/app/controllers/UrlController.php',
         'App\\Controllers\\UsersController' => __DIR__ . '/../..' . '/app/controllers/UsersController.php',
         'App\\Controllers\\ZohoAuthController' => __DIR__ . '/../..' . '/app/controllers/ZohoAuthController.php',
         'App\\core\\App' => __DIR__ . '/../..' . '/core/App.php',

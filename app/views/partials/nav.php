@@ -6,26 +6,17 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+
             <li class="nav-item active">
-                <a class="nav-link" href="#">SalesInbox</a>
+                <a class="nav-link" href="/home">Home</a>
             </li>
+
+            <?php foreach (modules() as $module) : ?>
             <li class="nav-item">
-                <a class="nav-link" href="#">Feeds</a>
+                <a class="nav-link" href="<?php echo lcfirst($module->getAPIName()); ?>"><?php echo $module->getPluralLabel(); ?></a>
             </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="home">Homes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="leads">Leads</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="account">Accounts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact">Contacts</a>
-            </li>
-            <li class="nav-item">
+            <?php endforeach; ?>
+
 
         </ul>
         <form class="form-inline my-2 my-lg-0">

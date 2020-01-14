@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controllers\\PagesController' => $baseDir . '/app/controllers/PagesController.php',
+    'App\\Controllers\\UrlController' => $baseDir . '/app/controllers/UrlController.php',
     'App\\Controllers\\UsersController' => $baseDir . '/app/controllers/UsersController.php',
     'App\\Controllers\\ZohoAuthController' => $baseDir . '/app/controllers/ZohoAuthController.php',
     'App\\core\\App' => $baseDir . '/core/App.php',

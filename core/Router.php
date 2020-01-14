@@ -2,6 +2,8 @@
 
 namespace App\core;
 
+use Exception;
+
 class Router
 {
     public $routes = [
@@ -39,8 +41,8 @@ class Router
                 ...explode('@', $this->routes[$requestType][$uri])
             );
         }
-
-        throw new Exception('No route defined for this URI.');
+//        throw new Exception('No route defined for this URI.');
+        return $this->callAction('PagesController', 'route');
     }
 
     protected function callAction($controller, $action)
